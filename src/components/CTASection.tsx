@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Calendar } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 
 const CTASection = () => {
   return (
