@@ -28,10 +28,12 @@ const CTASection = () => {
               Contact Me <ArrowRight size={18} />
             </a>
             <a
-              href="mailto:ikogho.joseph@live.com"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-border font-heading font-semibold text-foreground hover:border-secondary hover:text-secondary transition-all duration-300"
+              href="https://wa.me/+1XXXXXXXXXX"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-border font-heading font-semibold text-foreground hover:border-green-500 hover:text-green-500 transition-all duration-300"
             >
-              <Calendar size={18} /> Schedule a Conversation
+              <MessageCircle size={18} /> Chat on WhatsApp
             </a>
           </div>
         </motion.div>
