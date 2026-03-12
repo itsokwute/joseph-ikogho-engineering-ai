@@ -18,13 +18,13 @@ const AISection = () => {
     <section id="ai" className="section-padding bg-muted/30">
       <div className="container mx-auto max-w-5xl">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}>
-          <motion.p variants={fadeUp} custom={0} className="text-secondary font-heading font-semibold text-sm uppercase tracking-wider mb-3">
+          <motion.p variants={fadeUp} custom={0} className="text-secondary font-heading font-semibold text-sm uppercase tracking-wider mb-2">
             Digital Innovation
           </motion.p>
-          <motion.h2 variants={fadeUp} custom={1} className="text-3xl sm:text-4xl font-heading font-bold mb-4 gradient-text">
+          <motion.h2 variants={fadeUp} custom={1} className="text-3xl sm:text-4xl font-heading font-bold mb-3 gradient-text">
             AI Automation & Intelligent Systems
           </motion.h2>
-          <motion.p variants={fadeUp} custom={2} className="text-muted-foreground max-w-2xl mb-12 leading-relaxed">
+          <motion.p variants={fadeUp} custom={2} className="text-muted-foreground max-w-2xl mb-8 leading-relaxed">
             Joseph designs AI-powered systems that analyze businesses, identify inefficiencies, and recommend automation opportunities. His tools integrate data sources, automate analysis, and generate actionable insights.
           </motion.p>
 

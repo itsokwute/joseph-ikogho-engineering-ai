@@ -2,24 +2,33 @@ import { useState, FormEvent } from "react";
 import { motion } from "framer-motion";
 import { Send, Mail } from "lucide-react";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 const ContactSection = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [sending, setSending] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
       toast.error("Please fill in all fields.");
       return;
     }
     setSending(true);
-    // Simulate send
-    setTimeout(() => {
-      setSending(false);
+    try {
+      const { error } = await supabase.from("contact_submissions").insert({
+        name: form.name.trim(),
+        email: form.email.trim(),
+        message: form.message.trim(),
+      });
+      if (error) throw error;
       toast.success("Message sent! Joseph will get back to you soon.");
       setForm({ name: "", email: "", message: "" });
-    }, 1000);
+    } catch {
+      toast.error("Something went wrong. Please try again.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -31,10 +40,10 @@ const ContactSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-secondary font-heading font-semibold text-sm uppercase tracking-wider mb-3 text-center">
+          <p className="text-secondary font-heading font-semibold text-sm uppercase tracking-wider mb-2 text-center">
             Get in touch
           </p>
-          <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-4 gradient-text text-center">
+          <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-3 gradient-text text-center">
             Contact Me
           </h2>
           <p className="text-muted-foreground text-center mb-8 flex items-center justify-center gap-2">
