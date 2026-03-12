@@ -18,10 +18,10 @@ const AboutSection = () => {
     <section id="about" className="section-padding circuit-bg">
       <div className="container mx-auto max-w-5xl">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}>
-          <motion.p variants={fadeUp} custom={0} className="text-secondary font-heading font-semibold text-sm uppercase tracking-wider mb-3">
+          <motion.p variants={fadeUp} custom={0} className="text-secondary font-heading font-semibold text-sm uppercase tracking-wider mb-2">
             Get to know me
           </motion.p>
-          <motion.h2 variants={fadeUp} custom={1} className="text-3xl sm:text-4xl font-heading font-bold mb-8 gradient-text">
+          <motion.h2 variants={fadeUp} custom={1} className="text-3xl sm:text-4xl font-heading font-bold mb-6 gradient-text">
             About Me
           </motion.h2>
 

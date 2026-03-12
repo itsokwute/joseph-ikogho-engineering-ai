@@ -25,10 +25,10 @@ const SkillsSection = () => {
     <section className="section-padding bg-muted/30">
       <div className="container mx-auto max-w-4xl">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}>
-          <motion.p variants={fadeUp} custom={0} className="text-secondary font-heading font-semibold text-sm uppercase tracking-wider mb-3 text-center">
+          <motion.p variants={fadeUp} custom={0} className="text-secondary font-heading font-semibold text-sm uppercase tracking-wider mb-2 text-center">
             Technical Toolkit
           </motion.p>
-          <motion.h2 variants={fadeUp} custom={1} className="text-3xl sm:text-4xl font-heading font-bold mb-12 gradient-text text-center">
+          <motion.h2 variants={fadeUp} custom={1} className="text-3xl sm:text-4xl font-heading font-bold mb-8 gradient-text text-center">
             Skills & Technologies
           </motion.h2>
 

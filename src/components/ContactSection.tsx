@@ -31,10 +31,10 @@ const ContactSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-secondary font-heading font-semibold text-sm uppercase tracking-wider mb-3 text-center">
+          <p className="text-secondary font-heading font-semibold text-sm uppercase tracking-wider mb-2 text-center">
             Get in touch
           </p>
-          <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-4 gradient-text text-center">
+          <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-3 gradient-text text-center">
             Contact Me
           </h2>
           <p className="text-muted-foreground text-center mb-8 flex items-center justify-center gap-2">

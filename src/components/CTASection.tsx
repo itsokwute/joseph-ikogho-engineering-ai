@@ -16,10 +16,10 @@ const CTASection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold mb-6 gradient-text">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold mb-4 gradient-text">
             Let's Build Smarter Systems Together
           </h2>
-          <p className="text-muted-foreground text-lg mb-10 max-w-xl mx-auto leading-relaxed">
+          <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto leading-relaxed">
             If you're looking to improve manufacturing performance, build automation tools, or collaborate on advanced technology projects, let's connect.
           </p>
 

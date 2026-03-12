@@ -28,8 +28,8 @@ const ExpertiseSection = () => {
   return (
     <section className="section-padding bg-muted/30">
       <div className="container mx-auto">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} className="text-center mb-14">
-          <motion.p variants={fadeUp} custom={0} className="text-secondary font-heading font-semibold text-sm uppercase tracking-wider mb-3">
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} className="text-center mb-10">
+          <motion.p variants={fadeUp} custom={0} className="text-secondary font-heading font-semibold text-sm uppercase tracking-wider mb-2">
             What I do
           </motion.p>
           <motion.h2 variants={fadeUp} custom={1} className="text-3xl sm:text-4xl font-heading font-bold gradient-text">
